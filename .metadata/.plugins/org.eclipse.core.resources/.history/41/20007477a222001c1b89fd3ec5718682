@@ -1,0 +1,13 @@
+package com.adnannAPI.demo.model.copy2;
+
+//package com.adnannAPI.demo.employee_app.data.models;
+
+
+	public enum Department {
+		
+		HUMAN_RESOURCE,
+		MARKETING,
+		ENGINEERING
+		
+	}
+

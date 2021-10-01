@@ -1,0 +1,5 @@
+package com.adnannAPI.demo.domain.repository;
+
+public class EmployeeRepository {
+
+}

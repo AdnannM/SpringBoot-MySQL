@@ -1,0 +1,13 @@
+package com.adnannAPI.demo.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.adnannAPI.demo.dto.EmployeeDTO;
+
+@Service
+public interface EmployeeService {
+	
+	List<EmployeeDTO> getAllEmployee();
+}

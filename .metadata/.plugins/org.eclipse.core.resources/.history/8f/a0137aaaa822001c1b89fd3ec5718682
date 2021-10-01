@@ -1,0 +1,5 @@
+package com.adnannAPI.demo.data.payloads.request;
+
+public class EmployeeRequest {
+
+}

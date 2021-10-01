@@ -1,0 +1,9 @@
+package com.adnannAPI.demo;
+
+import javax.persistence.*;
+import java.util.Objects;
+
+@Entity
+public class Employee {
+	
+}

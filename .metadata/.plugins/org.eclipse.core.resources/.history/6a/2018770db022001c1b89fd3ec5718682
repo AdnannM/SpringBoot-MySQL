@@ -1,0 +1,18 @@
+package com.adnannAPI.demo.service.impl;
+
+import java.util.List;
+
+import com.adnannAPI.demo.dto.EmployeeDTO;
+import com.adnannAPI.demo.service.EmployeeService;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	@Override
+	public List<EmployeeDTO> getAllEmployee() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+}

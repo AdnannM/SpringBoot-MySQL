@@ -1,0 +1,22 @@
+package com.adnannAPI.demo.service;
+
+import java.util.Optional;
+
+import org.springframework.stereotype.Component;
+
+import com.adnannAPI.demo.data.payloads.request.EmployeeRequest;
+import com.adnannAPI.demo.data.payloads.request.response.MessageResponse;
+import com.adnannAPI.demo.domain.model.Employee;
+
+import antlr.collections.List;
+
+@
+public interface EmployeeService {
+	MessageResponse createEmployee(EmployeeRequest employeeRequest);
+	Optional<Employee> updateEmployee(Integer employeeId, EmployeeRequest employeeRequest);
+	void deleteEmployee(Integer employeeId);
+	Employee getSingleEmployee(Integer employeeId);
+	
+	// MARK: - Error
+	List getAllEmployee();
+}

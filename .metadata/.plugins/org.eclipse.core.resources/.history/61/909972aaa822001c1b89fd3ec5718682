@@ -1,0 +1,5 @@
+package com.adnannAPI.demo.data.payloads.request.response;
+
+public class MessageResponse {
+
+}

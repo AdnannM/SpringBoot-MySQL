@@ -1,0 +1,46 @@
+package com.adnannAPI.demo.service.impl;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.adnannAPI.demo.domain.model.Employee;
+import com.adnannAPI.demo.domain.repository.EmployeeRepository;
+import com.adnannAPI.demo.dto.EmployeeDTO;
+import com.adnannAPI.demo.service.EmployeeService;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	
+	@Autowired
+	private EmployeeRepository empRepo;
+	
+	@Override
+	public List<EmployeeDTO> getAllEmployee() {
+		
+		List<Employee> empListaDB = empRepo.findAll();
+		
+		
+		List<EmployeeDTO>  resultList = new ArrayList<EmployeeDTO>();
+		
+		if(empListaDB.isEmpty()) {
+			return resultList;
+		}
+		
+		for (Employee employee : empListaDB) {
+			EmployeeDTO newEployeeDTO = new EmployeeDTO();
+			newEployeeDTO.setId(employee.getId());
+			Double yearSalary = employee.getSalary() * 12;
+			newEployeeDTO.setYearSalary(yearSalary);
+			
+			resultList.add(newEployeeDTO);
+		}
+		
+		return resultList;
+	}
+
+
+
+}

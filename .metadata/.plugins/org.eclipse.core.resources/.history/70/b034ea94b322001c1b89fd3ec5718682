@@ -1,0 +1,15 @@
+package com.adnannAPI.demo.web;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api")
+public class EployeeController {
+
+	@GetMapping("/employies")
+    public ResponseEntity<> getAllEmployees () {
+//        List<Employee> employees = employeeService.getAllEmployee();
+//        return new ResponseEntity<>(employees, HttpStatus.OK);
+    }
+}

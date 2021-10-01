@@ -1,0 +1,13 @@
+package com.adnannAPI.demo.service.impl;
+
+import com.adnannAPI.demo.service.EmployeeService;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	@Override
+	public void getAllEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
